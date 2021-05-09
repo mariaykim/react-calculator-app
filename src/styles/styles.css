@@ -1,0 +1,98 @@
+.app {
+    height: 100vh;
+    width: 100%;
+    background-color:#0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.calculator {
+    height: 80vh;
+    width: 20%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: purple;  
+}
+
+.screen {
+  height: 25vh;
+  width: 91%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: no-wrap;
+  color: white;
+  background-color: tomato;
+}
+
+.result-screen {
+    height: 19vh;
+    font-size: 8rem;
+    font-weight: 600;
+    /* To display the value at the bottom-right of the container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+
+
+.computatation-screen {
+  height: 6vh;
+  font-size: 2.5rem;
+  
+  /* To display the value at the bottom-right of the container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.keypad__row {
+  height: 11vh; /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
+  width: 100%;
+  display: flex; /* To control the dimension */
+  color: white;
+}
+
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: red;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+.btn:hover {
+  color: white;
+  background-color: pink;
+}
+.btn:active {
+  transform: scale(.95);
+}
+
+.btn--large {
+  width: 50%;
+  color: purple;
+  background-color: green;
+  transition: all .2s;
+}
+.btn--large:hover {
+  background-color: whitesmoke;
+  color: coral;
+}
+
+.btn--primary {
+  color: darkblue;
+}
+.btn--operator {
+  background-color: orange;
+}
