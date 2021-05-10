@@ -1,27 +1,35 @@
 .app {
     height: 100vh;
     width: 100%;
-    background-color:#0f0;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
 .calculator {
-    height: 80vh;
-    width: 20%;
-    box-shadow: 0 2rem 4rem var(--shadow);
-    background-color: purple;  
+    height: 90vh;
+    width: 50vh;
+    background-color: blue;  
 }
 
 .screen {
   height: 25vh;
-  width: 91%;
+  width: 100%;
   padding: 0 2rem;
   overflow: hidden;
   white-space: no-wrap;
   color: white;
-  background-color: tomato;
+  background-color: black;
+}
+
+.computatation-screen {
+  height: 6vh;
+  font-size: 1px;
+  /* To display the value at the bottom-right of the container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .result-screen {
@@ -32,39 +40,32 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-right: 10px;
   }
 
-
-
-.computatation-screen {
-  height: 6vh;
-  font-size: 2.5rem;
-  
-  /* To display the value at the bottom-right of the container */
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
 .keypad__row {
-  height: 11vh; /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
+  height: 10vh; /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
   width: 100%;
   display: flex; /* To control the dimension */
-  color: white;
+  margin: 1rem 0rem;
 }
 
 .keypad {
   height: 55vh;
   width: 100%;
+  padding: 2px;
 }
 
 .btn {
-  width: 25%;
-  height: 100%;
+  width: 5rem;
+  height: 5rem;
   font-size: 3rem;
   font-family: inherit;
-  background-color: red;
+  background-color: #333333;
   border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
   outline: none;
   display: flex;
   justify-content: center;
@@ -73,26 +74,50 @@
 }
 .btn:hover {
   color: white;
-  background-color: pink;
+  background-color: #464646;
 }
 .btn:active {
   transform: scale(.95);
 }
 
 .btn--large {
-  width: 50%;
-  color: purple;
-  background-color: green;
+  width: 11rem;
+  height: 5rem;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color:#333333;
+  border: 1px solid transparent;
+  border-radius: 45%;
+  padding: 20px;
+  margin: 10px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
   transition: all .2s;
 }
 .btn--large:hover {
-  background-color: whitesmoke;
-  color: coral;
+  color: white;
+  background-color: #464646;
 }
 
 .btn--primary {
-  color: darkblue;
+  color: #000000;
+  background-color: #a5a5a5;
+
+}
+
+.btn--primary:hover {
+  color:black;
+  background-color: #dadada;
 }
 .btn--operator {
-  background-color: orange;
+  background-color: #ff9f06;
+  color: #000000;
+}
+
+.btn--operator:hover {
+  color: black;
+  background-color: #ffa006d0;
 }

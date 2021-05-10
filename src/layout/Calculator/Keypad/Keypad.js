@@ -7,7 +7,7 @@ const keypad = (props) => (
     <KeypadRow>
       <Button type="primary" onButtonPress={props.onButtonPress}>C</Button>
       <Button type="primary" onButtonPress={props.onButtonPress}>&larr;</Button>
-      <Button type="operator" onButtonPress={props.onButtonPress}>%</Button>
+      <Button type="primary" onButtonPress={props.onButtonPress}>%</Button>
       <Button type="operator" onButtonPress={props.onButtonPress}>/</Button>
     </KeypadRow>
     
@@ -33,9 +33,10 @@ const keypad = (props) => (
     </KeypadRow>
     
     <KeypadRow>
-      <Button onButtonPress={props.onButtonPress}>0</Button>
+      <LargeButton onButtonPress={props.onButtonPress}>0</LargeButton>
       <Button onButtonPress={props.onButtonPress}>.</Button>
-      <LargeButton onButtonPress={props.onButtonPress}>=</LargeButton>
+      <Button type="operator" onButtonPress={props.onButtonPress}>=</Button>
+      
     </KeypadRow>
   </section>
 );
